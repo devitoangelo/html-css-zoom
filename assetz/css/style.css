@@ -1,49 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.debug header{
+.debug header {
     height: 5vh;
 }
-.debug footer{
+
+.debug footer {
     height: 10vh;
+    width: 100%;
 }
-.debug main{
+
+.debug main {
     height: 85vh;
-    
+
 }
 
 
-#site_header{
+#site_header {
     background-color: black
 }
 
-#site_footer{
-    background-color: red;
+#site_footer {
+    background-color: black;
 }
 
-#site_main{
+#site_main {
     background-color: black;
     margin: auto;
-        
+
 }
 
 
-.bottoni{
+.bottoni {
     text-align: end;
 
 
 
 }
 
-.Speaker{
+.Speaker {
     background-color: gray;
 
 }
 
-.arrow{
+.arrow {
     width: 20px;
 
 }
@@ -51,7 +54,7 @@
 
 
 
-.btn{
+.btn {
     background-color: gray;
     border-radius: 4px;
     padding: 2px;
@@ -62,50 +65,88 @@
 
 
 
-.container{
+.container {
     display: flex;
     justify-content: end;
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
 }
-.col-7{
-    width: calc(100% / 7 -3px );
+
+.col-7 {
+    width: calc(100% / 7 -3px);
     margin: 0 3px;
 }
 
 
-img{
+img {
     padding: 1px;
     height: 200px;
     width: 200px;
 
 }
 
-.utente_zoom{
+.utente_zoom {
     position: relative;
 
 }
 
- .microphone{
+.microphone {
     position: absolute;
     height: 30px;
     width: 30px;
     bottom: 0;
     left: 0;
     margin-bottom: 5px;
-    
- }
+
+}
 
 
 
-.utente{
+.utente {
     position: absolute;
     bottom: 0;
     margin-bottom: 5px;
     margin-left: 2rem;
     color: white;
-    
+
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 
+.items {
+    width: 5rem;
+    height: 50px;
+    display: flex;
+
+
+
+
+}
+
+
+.character {
+    margin-top: 2em;
+
+}
+
+
+
+
+.items2 {
+
+    align-items: center;
+    color: red;
+    background-color: #4A4A4A;
+    padding: 25px;
+    
+   
+
+}
