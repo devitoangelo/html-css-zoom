@@ -11,6 +11,11 @@
 .debug footer {
     height: 10vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+ 
+    
 }
 
 .debug main {
@@ -20,22 +25,29 @@
 
 
 #site_header {
-    background-color: black
+    background-color: black;
+
+
 }
 
 #site_footer {
-    background-color: black;
+    background-color: #222222;
+    color: white;
+
 }
 
 #site_main {
     background-color: black;
     margin: auto;
+    overflow-y: auto;
+    /* per non far rompere il layout fa tipo cornice main */
 
 }
 
 
 .bottoni {
     text-align: end;
+    line-height: 40px;
 
 
 
@@ -43,6 +55,10 @@
 
 .Speaker {
     background-color: gray;
+    text-align: center;
+    height: 30px;
+   
+ 
 
 }
 
@@ -51,6 +67,12 @@
 
 }
 
+
+.grip{
+    
+
+    height: 15px;
+}
 
 
 
@@ -71,10 +93,15 @@
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
+    max-width:  1600px;
+  gap: 1px;
+
+
 }
 
 .col-7 {
     width: calc(100% / 7 -3px);
+    
     margin: 0 3px;
 }
 
@@ -99,6 +126,7 @@ img {
     left: 0;
     margin-bottom: 5px;
 
+
 }
 
 
@@ -110,43 +138,56 @@ img {
     margin-left: 2rem;
     color: white;
 
+
 }
 
-.container_footer {
+.left{
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
+    gap: 0.25rem;
 }
 
-
-.items {
-    width: 5rem;
-    height: 50px;
+.icon{
     display: flex;
-
-
-
-
 }
 
 
-.character {
-    margin-top: 2em;
-
-}
-
-
-
-
-.items2 {
-
+.center{
+    flex-grow: 3;
+    text-align: center;
     align-items: center;
-    color: red;
-    background-color: #4A4A4A;
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.right{
+    flex-grow: 1;
+    text-align: end;
     
-   
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.end{
+    display: inline-block;
+    height: 100%;
+    background: grey;
+    line-height: 80px;
+    padding: 0 0.5rem;
+    color: red
+  
+
+    
 
 }
+
+
+
+
+ 
+
